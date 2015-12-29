@@ -91,8 +91,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             print("Error al cargar el fichero de sonido " + canciones[row][0] + "." + canciones[row][1])
         }
         
-        
-        
+        // Iniciamos la reproducción
+        self.play();
         
     }
     
