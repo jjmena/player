@@ -21,6 +21,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var stopButton: UIButton!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     private var canciones : Array<Array<String>> = Array<Array<String>>()
     
     private var reproductor: AVAudioPlayer!
@@ -122,6 +124,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         pauseButton.enabled = false
         playButton.enabled = true
         
+    }
+    
+    @IBAction func aleatorio() {
+        let numero = random()
+        let index : Int = numero % 5
+        self.pickerView.selectRow(index, inComponent: 0, animated: true)
+        self.pickerView(self.pickerView, didSelectRow: index, inComponent: 0)
     }
 }
 

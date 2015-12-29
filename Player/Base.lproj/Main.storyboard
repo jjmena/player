@@ -59,6 +59,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aej-Ch-wem"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slH-VA-I2h">
+                                <rect key="frame" x="241" y="432" width="119" height="30"/>
+                                <state key="normal" title="Cancion aleatoria"/>
+                                <connections>
+                                    <action selector="aleatorio" destination="BYZ-38-t0r" eventType="touchUpInside" id="agC-aL-cET"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFF-9x-Dty">
                                 <rect key="frame" x="285" y="57" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
@@ -70,6 +77,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="CPh-bQ-4gv" secondAttribute="trailing" constant="14" id="0YY-L2-Q0N"/>
+                            <constraint firstItem="slH-VA-I2h" firstAttribute="top" secondItem="GXD-kR-WEI" secondAttribute="bottom" constant="2" id="0g9-3J-HEK"/>
                             <constraint firstItem="FiF-dc-99D" firstAttribute="top" secondItem="NLN-FH-Pgj" secondAttribute="bottom" constant="8" symbolic="YES" id="447-Ah-1tS"/>
                             <constraint firstItem="iFF-9x-Dty" firstAttribute="leading" secondItem="FiF-dc-99D" secondAttribute="trailing" constant="25" id="9Qp-DR-YoW"/>
                             <constraint firstItem="FiF-dc-99D" firstAttribute="top" secondItem="iFF-9x-Dty" secondAttribute="top" id="A8b-YJ-s9t"/>
@@ -80,6 +88,7 @@
                             <constraint firstItem="CPh-bQ-4gv" firstAttribute="baseline" secondItem="NLN-FH-Pgj" secondAttribute="baseline" id="WFt-dg-Zn4"/>
                             <constraint firstAttribute="trailing" secondItem="GXD-kR-WEI" secondAttribute="trailing" id="aPZ-m0-PFE"/>
                             <constraint firstItem="NLN-FH-Pgj" firstAttribute="baseline" secondItem="CPh-bQ-4gv" secondAttribute="firstBaseline" id="eHb-6i-Vyc"/>
+                            <constraint firstItem="slH-VA-I2h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gc1-hN-JGs"/>
                             <constraint firstItem="NLN-FH-Pgj" firstAttribute="leading" secondItem="FiF-dc-99D" secondAttribute="leading" id="iHH-XY-q69"/>
                             <constraint firstItem="FwM-Ui-qf3" firstAttribute="leading" secondItem="FiF-dc-99D" secondAttribute="trailing" constant="27" id="jhC-qv-dtr"/>
                             <constraint firstItem="FwM-Ui-qf3" firstAttribute="leading" secondItem="iFF-9x-Dty" secondAttribute="leading" id="pHG-go-pbR"/>
@@ -96,6 +105,7 @@
                         <outlet property="cancion" destination="CPh-bQ-4gv" id="ZUw-A3-P0q"/>
                         <outlet property="caratula" destination="FiF-dc-99D" id="0Xd-cs-9hO"/>
                         <outlet property="pauseButton" destination="FwM-Ui-qf3" id="ukT-Vl-RRq"/>
+                        <outlet property="pickerView" destination="GXD-kR-WEI" id="XEK-SF-v41"/>
                         <outlet property="playButton" destination="iFF-9x-Dty" id="hDG-UZ-wwP"/>
                         <outlet property="stopButton" destination="drD-H8-f9V" id="DHI-28-y5D"/>
                     </connections>
